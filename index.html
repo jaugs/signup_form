@@ -4,104 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Form</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-<input type="color">   
- </input>
 
-<div class="header"></div>
+<div class= "containerLeft">
+  <div class="title">
+    <img id="odin" src="./images/odin-lined.png" alt="Odin Logo" width="200px">
+    <div class="headerText">Odin</div>
+  </div>
+  <div class = "caption">Photo by Halie West on Unsplash</div>
+</div>
 
-<form action="example.com/path" method="post">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName">
 
-    <select name="fashion">
-        <optgroup label="Clothing">
-          <option value="t_shirt">T-Shirts</option>
-          <option value="sweater">Sweaters</option>
-          <option value="coats">Coats</option>
-        </optgroup>
-        <optgroup label="Foot Wear">
-          <option value="sneakers">Sneakers</option>
-          <option value="boots">Boots</option>
-          <option value="sandals">Sandals</option>
-        </optgroup>
-      </select>
+<div class="containerRight">
+  <div class="textMessage">
+  <div class="textTop">This is not a real online service! You know you need something
+   like this in your life to help you realize your deepest dreams.
+   <br>Sign up <em>now</em>  to get started.  </div>
+  <div class= "textBottom">You <em>know</em> you want to.</div>
+  </div>
 
-      <div>
-        <input type="radio" id="child" name="ticket_type" value="child">
-        <label for="child">Child</label>
-      </div>
-      
-      <div>
-        <input type="radio" id="adult" name="ticket_type" value="adult">
-        <label for="adult">Adult</label>
-      </div>
-      
-      <div>
-        <input type="radio" id="senior" name="ticket_type" value="senior">
-        <label for="senior">Senior</label>
-      </div>
-      <fieldset>
-        <legend>Contact Details</legend>
-      
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-      
-        <label for="phone_number">Phone Number:</label>
-        <input type="tel" id="phone_number" name="phone_number">
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-      </fieldset>
-      
-      <fieldset>
-        <legend>Delivery Details</legend>
-      
-        <label for="street_address">Street Address:</label>
-        <input type="text" id="street_address" name="street_address">
-      
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city">
-      
-        <label for="zip_code">Zip Code:</label>
-        <input type="text" id="zip_code" name="zip_code">
-      </fieldset>
 
+<form action="./links/login.html" method="post">
+ <div class="signUp">  
+  <div class="doThis">Let's Do this!</div>
+
+  <div class="fName">
+  <label for="firstName">FIRST NAME</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Thor">
+  </div>
+  <div class="lName">
+  <label for="lastName">LAST NAME</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Odinson">
+  </div>
+  <div class="eMail">
+  <label for="email">EMAIL</label>
+    <input type="email" id="email" name="email" placeholder="Thor@asgard.com">
+  </div>
+  <div class="phoneNum">
+  <label for="phone_number">PHONE NUMBER</label>
+    <input type="tel" id="phone_number" name="phone_number" placeholder="(222)222-2222">
+  </div>
+  <div class="pw1">
+  <label for="password">PASSWORD</label>
+    <input type="password" id="password" class = "valid" name="password"
+    title= "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+  </div>
+  <div class="pw2">
+  <label for="password">CONFIRM PASSWORD</label>
+    <input type="password" id="password2" class = "valid" name="password" oninput="check(this)"
+     title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+  </div> 
+</div>
+<!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" -->
+
+<div class="bottomText">
+<button id="submit" type="submit">Create Account</button>
+<div class="login">Already have an account? <a href="./links/login.html">Log in</a>
+</div>
+</div>
 </form>
 
+</div>
 
-<table>
-    <caption>Dinosaurs in the Jurassic period</caption>
-    <colgroup>
-        <col style="background-color: rgb(69, 22, 177)">
-    </colgroup>
-    <tr>
-      <th colspan="2">Animals</th>
-    </tr>
-    <tr>
-      <th colspan="2">Hippopotamus</th>
-    </tr>
-    <tr>
-      <th rowspan="2">Horse</th>
-      <td>Mare</td>
-    </tr>
-    <tr>
-      <td>Stallion</td>
-    </tr>
-    <tr>
-      <th colspan="2">Crocodile</th>
-    </tr>
-    <tr>
-      <th rowspan="2">Chicken</th>
-      <td>Hen</td>
-    </tr>
-    <tr>
-      <td>Rooster</td>
-    </tr>
-  </table>
-Photo by Halie West on Unsplash
 </body>
 </html>
